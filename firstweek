@@ -1,0 +1,113 @@
+task 1:
+a = int(input())
+b = -(a+1)
+print(b)
+
+task 2:
+a = input()
+b = 0
+for i in a:
+    b += ord(i)
+if b > 300:
+    print('It is tasty!')
+else:
+    print('Oh, no!')
+
+
+
+
+task 3
+s = input()
+print(s.lower())
+
+
+            
+task 4
+a = float(input())
+b = input()
+if b == 'k':
+    c = int(input())
+    a = a/1024
+    print(round(a, c))
+if b == 'b':
+    print(round(a*1024))
+task 5:
+n = list(map(int,input().split(' ')))
+
+a = True
+c = 0
+for i in range(1, n[0]+1):
+    if(n[0]%i == 0):
+        c = c + 1
+if(c == 2):
+    a = True
+else:
+    a = False
+if n[0] <500 and a == True and (n[1]%2 == 0):
+    print('Good job!')
+else:
+    print('Try next time!')
+    
+    
+    
+    
+
+task 6:
+a = int(input())
+for i in range (1, a+1):
+    b = int(input())
+    if b <= 10:
+        print('Go to work!')
+    else:
+        if 10 < b <= 25:
+            print('You are weak')
+        else:
+            if 25 < b <= 45:
+                print('Okay, fine')
+            else:
+                print('Burn! Burn! Burn Young!')
+                
+                
+                
+                
+                
+task 7:
+a = input()
+print(int(a,2))
+
+
+
+task 8:
+a = input()
+b = input()
+if a.count(b) == 1:
+    print(a.find(b))
+else:
+    if a.count(b) >= 2:
+        print(a.find(b), a.rfind(b))
+
+
+
+task 9:
+a = int(input())
+for i in range(0, a):
+    b = input()
+    if b.rfind('@gmail.com') == -1:
+        b = b
+    else:
+        c = len(b) - 10
+        
+        d = b.rfind('@gmail.com')
+        if c == d:
+            b = b.replace('@gmail.com','')
+            print(b)
+
+
+
+task 10:
+a = input()
+b = a.split()
+for element in b:
+    if len(element) >= 3:
+        print(element, end = ' ')
+        
